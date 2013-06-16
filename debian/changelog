@@ -1,0 +1,20 @@
+libticonv (1.1.4-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Andreas B. Mundt <andi@debian.org>  Sun, 09 Jun 2013 23:50:41 +0200
+
+libticonv (1.1.0-1.1) unstable; urgency=low
+
+  [ Holger Levsen ]
+  * Non-maintainer upload.
+  * Fix debian/copyright and update it to dep5 (Closes: #686635), thanks to
+    Tobias Bengfort for most of work.
+
+ -- Holger Levsen <holger@debian.org>  Sat, 15 Sep 2012 16:23:41 +0000
+
+libticonv (1.1.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #503103)
+
+ -- Krzysztof Burghardt <krzysztof@burghardt.pl>  Sun, 24 May 2009 21:28:58 +0200

@@ -1,75 +1,241 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libticonv
-Upstream-Contact: Romain Lievin <roms@tilp.info>
-Source: http://sourceforge.net/project/showfiles.php?group_id=18378
+Upstream-Contact: Lionel Debroux <lionel_debroux@yahoo.fr>
+Source: http://lpg.ticalc.org/prj_tilp/
+License: GPL-2+
 
 Files: *
-Copyright: 1999-2006 TiLP team <tilp-users@lists.sf.net>
-License: GPL-2
- This program is free software; you can redistribute it
- and/or modify it under the terms of the GNU General Public
- License as published by the Free Software Foundation in
- version 2 of the license.
- .
- This program is distributed in the hope that it will be
- useful, but WITHOUT ANY WARRANTY; without even the implied
- warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
- PURPOSE.  See the GNU General Public License for more
- details.
- .
- You should have received a copy of the GNU General Public
- License along with this package; if not, write to the Free
- Software Foundation, Inc., 51 Franklin St, Fifth Floor,
- Boston, MA  02110-1301 USA
- .
- On Debian systems, the full text of the GNU General Public
- License version 2 can be found in the file
- '/usr/share/common-licenses/GPL-2'.
-
-Files: src/charset.c src/filename.c src/tokens.c src/ticonv.c
-Copyright: 2006 Romain Lievin and Kevin Kofler
+Copyright: 1999-2006 Romain Liévin <roms@tilp.info>
+           2006 Tyler Cassidy <nexon89@gmail.com>
+           1999-2011 The TiLP Team <tilp-users@lists.sf.net>
 License: GPL-2+
 
-Files: src/charset.h
-Copyright: 2006 Kevin Kofler
+Files: src/*
+Copyright: 1999-2006 Romain Liévin <roms@tilp.info>
+           1999-2006 Kevin Kofler <kevin.kofler@chello.at>
+           2006 Tyler Cassidy <nexon89@gmail.com>
+           Benjamin Moody <benjamin@ecg.mit.edu>
 License: GPL-2+
 
-Files: src/export4.h
-Copyright: 1999-2005 Romain Lievin
+Files: tests/*
+Copyright: 1999-2004 Romain Liévin <roms@tilp.info>
 License: GPL-2+
 
-Files: src/stdints4.h
-Copyright: 1999-2005  Romain Lievin
-           2006 Tyler Cassidy
+Files: docs/*
+Copyright: Romain Liévin <roms@tilp.info>
+           2006-2009 The TiLP team <tilp-users@lists.sf.net>
 License: GPL-2+
 
-Files: src/ticonv.h
-Copyright: 1999-2006 Romain Lievin and Kevin Kofler
-License: GPL-2+
+Files: aclocal.m4
+Copyright: 1996-2009 Free Software Foundation, Inc.
+           2004 Scott James Remnant <scott@netsplit.com>
+License: GPL-2+ with Autoconf exception and other-GAP and other-GAP-m4
+
+Files: m4/*
+Copyright: 1992-2011 Free Software Foundation, Inc.
+License: other-GAP-m4
+
+Files: m4/libtool.m4
+Copyright: 1996-2001, 2003-2011 Free Software Foundation, Inc.
+License: GPL-2+ with Libtool exception and other-GAP-m4
+
+Files: compile
+       depcomp
+       missing
+Copyright: 1996-1997, 1999-2000, 2002-2009 Free Software Foundation, Inc.
+License: GPL-2+ with Autoconf exception
+
+Files: config.guess
+       config.sub
+Copyright: 1992-2011 Free Software Foundation, Inc.
+License: GPL-2+ with Autoconf exception and other-GAP-config
+
+Files: configure
+Copyright: 1992-2010 Free Software Foundation, Inc.
+License: GPL-2+ with Libtool exception and other-GAP-configure
+
+Files: install-sh
+Copyright: 1994 X Consortium
+License: Expat
+
+Files: ltmain.sh
+Copyright: 1996-2001, 2003-2011 Free Software Foundation, Inc.
+License: GPL-2+ with Libtool exception
+
+Files: */Makefile.in
+Copyright: 1994-2009 Free Software Foundation, Inc.
+License: other-GAP-Makefile.in
 
 Files: debian/*
-Copyright: Copyright 2009 Krzysztof Burghardt <krzysztof@burghardt.pl>
-License: GPL-2+
+Copyright: 2007-2009 Kryzsytof Burghardt <krzysztof@burghardt.pl>
+           Julien Blache <jb@jblache.org>
+           2012 Albert Huang <alberth.debian@gmail.com>
+           2012 Jacob Young <jacobly.debian@gmail.com>
+License: GPL-3+
 
 License: GPL-2+
- This program is free software; you can redistribute it
- and/or modify it under the terms of the GNU General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later
- version.
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
  .
- This program is distributed in the hope that it will be
- useful, but WITHOUT ANY WARRANTY; without even the implied
- warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
- PURPOSE.  See the GNU General Public License for more
- details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
  .
- You should have received a copy of the GNU General Public
- License along with this package; if not, write to the Free
- Software Foundation, Inc., 51 Franklin St, Fifth Floor,
- Boston, MA  02110-1301 USA
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software Foundation,
+ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  .
  On Debian systems, the full text of the GNU General Public
  License version 2 can be found in the file
- '/usr/share/common-licenses/GPL-2'.
+ `/usr/share/common-licenses/GPL-2'.
+Comment:
+ The exception provided in the README of this package is invalid.
+ The exception is only for the libticables source package, not the
+ libticonv package. Furthermore, upsteam has stated that the exception has
+ expired due to the new licensing status of the packages depending on the
+ libti* libraries. Emails documenting the situation follow.
+ .
+ From: Benjamin Moody <benjamin.moody@gmail.com>
+ Date: Tue, Sep 4, 2012 at 3:50 PM
+ All true, and if you want to drop that exception in future versions
+ you'll have no objections from me.
+ .
+ This exception only ever applied to libticables2; if it's mentioned in
+ the other libraries' README files I'm sure that was a mistake.
+ .
+ From: Lionel Debroux <lionel_debroux@yahoo.fr>
+ Date: Tue, Sep 4, 2012 at 1:09 PM
+ Well, said exception was created years before my time as the maintainer...
+ I _think_ that this exception is obsolete nowadays, as TilEm 2.0 is
+ completely free software. TilEm 0.x used a component with a non-free
+ license, but it has been replaced with free software for the TilEm 2.0
+ release, produced this year, which Albert is attempting to package for
+ Debian as well.
 
+License: GPL-2+ with Libtool exception
+ GNU Libtool is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+ .
+ As a special exception to the GNU General Public License,
+ if you distribute this file as part of a program or library that
+ is built using GNU Libtool, you may include this file under the
+ same distribution terms that you use for the rest of that program.
+ .
+ GNU Libtool is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with GNU Libtool; see the file COPYING.  If not, a copy
+ can be downloaded from http://www.gnu.org/licenses/gpl.html, or
+ obtained by writing to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+ with Autoconf exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ or see <http://www.gnu.org/licenses/>.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: other-GAP
+ This file is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+License: other-GAP-m4
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
+License: other-GAP-configure
+ This configure script is free software; the Free Software Foundation
+ gives unlimited permission to copy, distribute and modify it."
+
+License: other-GAP-config
+ This is free software; see the source for copying conditions.  There is NO
+ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+
+License: other-GAP-Makefile.in
+ This Makefile.in is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+ TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X Consortium shall not
+ be used in advertising or otherwise to promote the sale, use or other deal-
+ ings in this Software without prior written authorization from the X Consor-
+ tium.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 3 can be found in the file
+ `/usr/share/common-licenses/GPL-3'.

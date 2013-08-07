@@ -2,7 +2,11 @@ Source: libticonv
 Priority: optional
 Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
 Uploaders: Andreas B. Mundt <andi@debian.org>
-Build-Depends: debhelper (>= 9.0.0), libglib2.0-dev, tfdocgen, autotools-dev
+Build-Depends: autotools-dev,
+               debhelper (>= 9.0.0),
+               libglib2.0-dev,
+               pkg-config,
+               tfdocgen
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://lpg.ticalc.org/prj_tilp/
@@ -12,8 +16,10 @@ Vcs-Browser: http://git.debian.org/?p=debian-science/packages/libticonv.git
 Package: libticonv-dev
 Section: libdevel
 Architecture: any
-Depends: libticonv7 (= ${binary:Version}), ${misc:Depends}, pkg-config, libglib2.0-dev
-Pre-Depends: ${misc:Pre-Depends}
+Depends: libglib2.0-dev,
+         libticonv7 (= ${binary:Version}),
+         pkg-config,
+         ${misc:Depends}
 Description: Texas Instruments calculators charsets library [development files]
  The libticonv is a library providing support for operations on Texas
  Instruments calculators charsets. All charsets for all calculators are
@@ -25,11 +31,25 @@ Description: Texas Instruments calculators charsets library [development files]
 Package: libticonv7
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libticonv3
 Description: Texas Instruments calculators charsets library
  The libticonv is a library providing support for operations on Texas
  Instruments calculators charsets. All charsets for all calculators are
  supported; the library is also able to convert from/to UTF-8/UTF-16.
  .
  This package provides the shared library.
+
+Package: libticonv-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: libticonv7 (= ${binary:Version}), ${misc:Depends}
+Description: Texas Instruments calculators charsets library [debugging symbols]
+ The libticonv is a library providing support for operations on Texas
+ Instruments calculators charsets. All charsets for all calculators are
+ supported; the library is also able to convert from/to UTF-8/UTF-16.
+ .
+ This package provides the debugging symbols for the library.

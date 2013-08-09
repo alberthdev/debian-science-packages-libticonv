@@ -1,20 +1,19 @@
-libticonv (1.1.4-1) UNRELEASED; urgency=low
+libticonv (1.1.4-1) unstable; urgency=low
 
-  * Team maintained in Debian-Science now. (Closes: #678872)
-  * New upstream release.
-  * Created a debug package to provide debugging symbols.
-  * Added support for multiarch.
-  * Added debian/watch to enable upstream update tracking.
-  * Fixed debian/copyright. (Closes: #686635)
-  * Added library symbols to fix lintian warning.
-  * Added a doc-base entry for the installed HTML documentation.
-  * Bumped versions of libti* dependencies for compatibility and
-    stability.
-  * Updated to packaging format 3.0, bumped debian/compat to 9 and
-    updated debhelper version to 9.
-  * Bumped Standards-Version to 3.9.4.
+  * Team maintained in Debian-Science now (closes: #678872).
+  * New upstream release in cooperation with Albert Huang
+    <alberth.debian@gmail.com>, thanks!
+  * Add debug package to provide debugging symbols.
+  * Add support for multiarch.
+  * Add 'debian/watch' to enable upstream update tracking.
+  * Fix 'debian/copyright' (closes: #686635).
+  * Add library symbols.
+  * Add doc-base entry for the installed HTML documentation.
+  * Bump versions of libti* dependencies.
+  * Switch to packaging format 3.0 (quilt), bump 'debian/compat' to 9.
+  * Bump Standards-Version to 3.9.4.
 
- -- Andreas B. Mundt <andi@debian.org>  Sun, 09 Jun 2013 23:50:41 +0200
+ -- Andreas B. Mundt <andi@debian.org>  Fri, 09 Aug 2013 22:09:30 +0200
 
 libticonv (1.1.0-1.1) unstable; urgency=low
 

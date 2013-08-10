@@ -1,3 +1,10 @@
+libticonv (1.1.4-2) unstable; urgency=low
+
+  * Fix dh_clean in 'debian/rules': Replace spaces by tab.
+  * Use dh-autoreconf.
+
+ -- Andreas B. Mundt <andi@debian.org>  Sat, 10 Aug 2013 19:22:31 +0200
+
 libticonv (1.1.4-1) unstable; urgency=low
 
   * Team maintained in Debian-Science now (closes: #678872).

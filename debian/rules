@@ -5,12 +5,12 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@
+	dh $@  --with autoreconf
 
 override_dh_strip:
 	dh_strip --dbg-package=libticonv-dbg
 
 override_dh_clean:
-        dh_clean --exclude=build/mingw/ticonv.rc~
+	dh_clean --exclude=build/mingw/ticonv.rc~
 
 .PHONY: override_dh_strip

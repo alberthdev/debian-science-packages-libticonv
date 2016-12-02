@@ -1,3 +1,10 @@
+libticonv (1.1.4-3) UNRELEASED; urgency=medium
+
+  * Bump Standards-Version to 3.9.8 (no changes needed).
+  * Switch to secure URI for vcs-field.
+
+ -- Andreas B. Mundt <andi@debian.org>  Fri, 02 Dec 2016 18:44:28 +0300
+
 libticonv (1.1.4-2) unstable; urgency=low
 
   * Fix dh_clean in 'debian/rules': Replace spaces by tab.

@@ -7,11 +7,11 @@ Build-Depends: debhelper (>= 9.0.0),
                libglib2.0-dev,
                pkg-config,
                tfdocgen
-Standards-Version: 3.9.4
+Standards-Version: 3.9.8
 Section: libs
 Homepage: http://lpg.ticalc.org/prj_tilp/
 Vcs-Git: git://anonscm.debian.org/debian-science/packages/libticonv.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-science/packages/libticonv.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=debian-science/packages/libticonv.git
 
 Package: libticonv-dev
 Section: libdevel
